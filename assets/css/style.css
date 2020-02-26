@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Martel+Sans&display=swap');
+
+/** Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2, h3 {
+    font-size: 24px;
+}
+
+h4 { 
+    font-size: 18px;
+}
+
+/** Formatações uteis */
+
+.text-right {
+    width: 100%;
+    text-align: right;
+}
+
+/** Cores dos textos */
+.text-blue {
+    color: #283F41;
+}
+
+.text-green {
+    color: #537C1F
+}
+
+.text-red {
+    color: #7F0303
+}
+
+/** Botões */
+.btn {
+    border: 10px;
+    border-radius: 5px;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    text-decoration: none;
+    padding: 3px 10px;
+    margin: 10px 0;
+}
+
+.btn-blue {
+    background-color: #283F41
+}
+
+.btn-green {
+    background-color: #537C1F
+}
+
+.btn-red {
+    background-color: #7F0303
+}
+
+
+/** Container e grid **/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 960px;
+    display: flex;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 960px;
+    display: grid;
+}
+
+.grid-3 {
+    grid: auto / 32% 32% 32%;
+    gap: 1%;
+}
+
+/** Cabeçalho da página **/
+.header {
+    text-align: center; 
+    margin: 100px 0;
+}
+
+.header img {
+    height: 150px;
+}
+.header h1 {
+    font-size: 32px; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/** Rodapé da página */
+.footer .container{
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 100px;
+}
+
+.footer .container p {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/** Anuncios */
+.notices header h3 {
+    font-size: 24px;
+}
+
+.notices article {
+    margin-bottom: 20px;
+}
+
+.notices article header h4 {
+    font-weight: bold;
+}
+
+.notices article p {
+    margin-bottom: 5px;
+}
+
+/** Media Query para telas de até 600px de largura*/
+@media (max-width: 600px) {
+    .notices .grid-3 {
+        grid: auto / auto
+    }
+}

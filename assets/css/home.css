@@ -1,0 +1,31 @@
+/** Chamada para ação */
+.cta, .notices {
+    margin-top: 100px;
+}
+.cta header h2 {
+    font-size: 24px;
+    line-height: 1.3em;
+}
+
+.cta .container, .notices .container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cta .container p {
+    margin-bottom: 10px;
+}
+
+.cta article {
+    min-width: 300px;
+    width: 49%;
+    margin-top: 20px;
+}
+
+/** Media Query para telas de até 600px de largura*/
+@media (max-width: 600px) {
+    .cta article {
+        width: 100%;
+    }
+}
